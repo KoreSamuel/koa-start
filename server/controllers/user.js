@@ -15,7 +15,6 @@ module.exports = {
             code: ''
         };
         let userResult = await userInfoService.signIn(formData);
-
         if (userResult) {
             if (formData.userName === userResult.name) {
                 result.success = true;

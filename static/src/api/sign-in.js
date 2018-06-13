@@ -4,7 +4,8 @@ const signInApi = async (userInfo) => {
     let result = await Request.post({
         url: '/api/user/signIn',
         data: userInfo
-    })
+    });
+    console.log('sign in result: ', result)
     return result
 }
 

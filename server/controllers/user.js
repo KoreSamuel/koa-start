@@ -27,7 +27,7 @@ module.exports = {
             result.message = userCode.FAIL_USER_NO_EXIST;
         }
 
-        if (formData.source === 'form' && userResult.success) {
+        if (formData.source === 'form' && result.success) {
             let session = ctx.session;
             session.isLogin = true;
             session.userName = userResult.name;

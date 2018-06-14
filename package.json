@@ -6,7 +6,7 @@
     "scripts": {
         "init_sql": "node ./init/index.js",
         "dev": "npm run dev_server & npm run dev_static",
-        "dev_server": "nodemon ./server/app",
+        "dev_server": "nodemon --inspect ./server/app",
         "dev_static": "webpack --watch --config ./static/build/webpack.dev.config.js",
         "start_static": "webpack --config ./static/build/webpack.prod.config.js",
         "start_server": "node ./server/app.js",

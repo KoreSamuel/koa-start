@@ -54,7 +54,7 @@ const user = {
      * @returns
      */
     async getUserInfoByUserName(userName) {
-        let reusult = dbUtils.select(
+        let result = dbUtils.select(
             'user',
             ['id', 'email', 'name', 'detail_info', 'create_time', 'modified_time', 'level']
         );
